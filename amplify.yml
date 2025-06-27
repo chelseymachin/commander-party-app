@@ -4,6 +4,8 @@ frontend:
     preBuild:
       commands:
         - curl -o- https://raw.githubusercontent.com/tj/n/master/bin/n | bash
+        - export N_PREFIX=$HOME/.n
+        - export PATH=$N_PREFIX/bin:$PATH
         - n 20.19.0
         - npm ci --cache .npm --prefer-offline
     build:
