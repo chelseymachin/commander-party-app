@@ -4,7 +4,7 @@
     <textarea
       id="deckInput"
       v-model="deckText"
-      placeholder="Paste your decklist here. One card per line.\nFirst line must be your commander!"
+      placeholder="Paste your decklist here. One card per line. First line must be your commander!"
       class="deck-textarea"
     ></textarea>
     <div class="card-count">{{ cardCount }} card{{ cardCount !== 1 ? 's' : '' }} detected</div>
